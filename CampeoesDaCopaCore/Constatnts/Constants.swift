@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Constants{
+    struct Repository{
+        static let url = Bundle.main.url(forResource: "winners", withExtension: "json")!
+    }
+    struct Router{
+        static  var winnersRouter:WinnersRouter?
+    }
+    
+}

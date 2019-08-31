@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WolrdCupTableViewCell" id="KGk-i7-Jjw" customClass="WolrdCupTableViewCell" customModule="CampeoesDaCopa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bélgica" translatesAutoresizingMaskIntoConstraints="NO" id="c7b-Cu-8Ef">
+                        <rect key="frame" x="16" y="11" width="46" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="BPK-Uh-0mo"/>
+                            <constraint firstAttribute="height" constant="32" id="Z08-S7-WO3"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alemanha" translatesAutoresizingMaskIntoConstraints="NO" id="vFq-Z8-pnp">
+                        <rect key="frame" x="258" y="11" width="46" height="32"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belgica" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxb-PU-g4b">
+                        <rect key="frame" x="70" y="19" width="63" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="IzM-HW-2AL"/>
+                            <constraint firstAttribute="height" constant="16" id="cRq-cf-NGe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alemanha" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-3d-4hj">
+                        <rect key="frame" x="185.5" y="19" width="64.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 x 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-ua-Vca">
+                        <rect key="frame" x="140.5" y="16.5" width="39" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nxb-PU-g4b" firstAttribute="centerY" secondItem="c7b-Cu-8Ef" secondAttribute="centerY" id="35r-rX-x0K"/>
+                    <constraint firstItem="c7b-Cu-8Ef" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="D9F-s4-RwC"/>
+                    <constraint firstItem="vFq-Z8-pnp" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="L62-BA-bRA"/>
+                    <constraint firstItem="vFq-Z8-pnp" firstAttribute="width" secondItem="c7b-Cu-8Ef" secondAttribute="width" id="OQ6-UX-lDF"/>
+                    <constraint firstItem="c7b-Cu-8Ef" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PzC-bz-7ge"/>
+                    <constraint firstItem="vFq-Z8-pnp" firstAttribute="centerY" secondItem="c7b-Cu-8Ef" secondAttribute="centerY" id="QwM-H9-GOa"/>
+                    <constraint firstItem="vFq-Z8-pnp" firstAttribute="leading" secondItem="fzU-3d-4hj" secondAttribute="trailing" constant="8" id="QzN-fb-HF2"/>
+                    <constraint firstItem="nxb-PU-g4b" firstAttribute="leading" secondItem="c7b-Cu-8Ef" secondAttribute="trailing" constant="8" id="Zly-uQ-Rob"/>
+                    <constraint firstItem="c7b-Cu-8Ef" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aIb-EU-iCD"/>
+                    <constraint firstItem="vFq-Z8-pnp" firstAttribute="height" secondItem="c7b-Cu-8Ef" secondAttribute="height" id="bcd-eK-FWs"/>
+                    <constraint firstItem="aHy-ua-Vca" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g3K-Ny-eEA"/>
+                    <constraint firstItem="fzU-3d-4hj" firstAttribute="leading" secondItem="aHy-ua-Vca" secondAttribute="trailing" constant="6" id="hf2-qS-FaC"/>
+                    <constraint firstItem="aHy-ua-Vca" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jId-wj-52z"/>
+                    <constraint firstItem="c7b-Cu-8Ef" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="o5R-rS-U6x"/>
+                    <constraint firstItem="fzU-3d-4hj" firstAttribute="centerY" secondItem="c7b-Cu-8Ef" secondAttribute="centerY" id="tOk-ty-Ijr"/>
+                    <constraint firstItem="c7b-Cu-8Ef" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="vbi-HQ-Su9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="flagAway" destination="vFq-Z8-pnp" id="ngq-qR-LSs"/>
+                <outlet property="flagHome" destination="c7b-Cu-8Ef" id="qzQ-tb-pP2"/>
+                <outlet property="lblAway" destination="fzU-3d-4hj" id="ues-BI-nt8"/>
+                <outlet property="lblHome" destination="nxb-PU-g4b" id="lGf-bV-Nok"/>
+                <outlet property="score" destination="aHy-ua-Vca" id="ZRN-Tn-zUH"/>
+            </connections>
+            <point key="canvasLocation" x="-571.20000000000005" y="-51.27436281859071"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Alemanha" width="138" height="93"/>
+        <image name="Bélgica" width="138" height="93"/>
+    </resources>
+</document>

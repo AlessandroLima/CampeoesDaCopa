@@ -15,6 +15,18 @@ class WolrdCupTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    @IBOutlet weak var flagHome: UIImageView!
+    @IBOutlet weak var flagAway: UIImageView!
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var lblHome: UILabel!
+    @IBOutlet weak var lblAway: UILabel!
+    
+    
+    
+    
+    
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

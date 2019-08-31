@@ -10,6 +10,16 @@ import UIKit
 
 class WinnersTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblYear: UILabel!
+    @IBOutlet weak var lblCountry: UILabel!
+    @IBOutlet weak var lblWinner: UILabel!
+    @IBOutlet weak var lblVice: UILabel!
+    @IBOutlet weak var lblWinnerScore: UILabel!
+    @IBOutlet weak var lblViceScore: UILabel!
+    @IBOutlet weak var imgFlagWinner: UIImageView!
+    @IBOutlet weak var imgFlagVice: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

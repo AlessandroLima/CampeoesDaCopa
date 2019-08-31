@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WinnersViewController" customModule="CampeoesDaCopa" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Vag-g0-juF" id="5er-k7-wY9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,20 +21,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-g0-juF">
-                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <rect key="frame" x="0.0" y="227" width="375" height="440"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-Yz-Ehc">
+                    <rect key="frame" x="0.0" y="64" width="375" height="163"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="163" id="YSU-FU-eZR"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Vag-g0-juF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="L16-pd-R6P"/>
-                <constraint firstItem="Vag-g0-juF" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="XkR-kT-oZK"/>
-                <constraint firstItem="Vag-g0-juF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gmL-Uh-iRK"/>
-                <constraint firstItem="Vag-g0-juF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hsh-2V-MZE"/>
+                <constraint firstItem="DdN-Yz-Ehc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dht-mL-rvE"/>
+                <constraint firstItem="Vag-g0-juF" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="FtB-gZ-oMg"/>
+                <constraint firstItem="Vag-g0-juF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Wde-VK-0Lu"/>
+                <constraint firstItem="Vag-g0-juF" firstAttribute="top" secondItem="DdN-Yz-Ehc" secondAttribute="bottom" id="dJP-cb-8E7"/>
+                <constraint firstItem="Vag-g0-juF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gwq-re-zH6"/>
+                <constraint firstItem="DdN-Yz-Ehc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j12-ug-FlE"/>
+                <constraint firstItem="DdN-Yz-Ehc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zzE-5M-p9f"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-42.399999999999999" y="25.637181409295355"/>
         </view>
     </objects>
+    <resources>
+        <image name="header" width="1200" height="514"/>
+    </resources>
 </document>
