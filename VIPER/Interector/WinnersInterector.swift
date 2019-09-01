@@ -2,18 +2,18 @@ import Foundation
 
 public struct WinnerInteractor {
     
-    var winnersPresenterProtocol: WinnersPresenterProtocol
+    var allWinnersPresenterProtocol: AllWinnersPresenterProtocol
     var wolrdCupRepository = WolrdCupRepository.wolrdCupRepository
     
     
     
-    init(winnersPresenterProtocol: WinnersPresenterProtocol){
-        self.winnersPresenterProtocol = winnersPresenterProtocol
+    init(winnersPresenterProtocol: AllWinnersPresenterProtocol){
+        self.allWinnersPresenterProtocol = winnersPresenterProtocol
     }
     
     func all(){
         let winners = wolrdCupRepository.all()
-        winnersPresenterProtocol.all(wolrdCups: winners)
+        allWinnersPresenterProtocol.all(wolrdCups: winners)
     }
     
 }

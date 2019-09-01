@@ -1,11 +1,15 @@
 import Foundation
 
-protocol WinnersPresenterProtocol {
+protocol AllWinnersPresenterProtocol {
     func all(wolrdCups:[WolrdCupEntity])
+}
+
+
+protocol ShowWinnersPresenterProtocol {
     func show(wolrdCup:WolrdCupEntity,winnersViewController:WinnersViewController)
 }
 
-class WinnersPresenter: WinnersPresenterProtocol{
+class WinnersPresenter: ShowWinnersPresenterProtocol{
     
     var winnersRouter:WinnersRouter?
     
@@ -13,12 +17,5 @@ class WinnersPresenter: WinnersPresenterProtocol{
         winnersRouter = WinnersRouter()
         winnersRouter?.show(wolrdCup: wolrdCup, viewController: winnersViewController)
     }
-    
-    func all(wolrdCups: [WolrdCupEntity]) {
-        
-    }
-    
-    
-    
     
 }

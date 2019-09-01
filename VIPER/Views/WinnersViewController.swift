@@ -37,14 +37,10 @@ class WinnersViewController: UIViewController {
         
      }
 
-    
-
-    
-    
-    
+   
 }
 
-extension WinnersViewController: WinnersPresenterProtocol{
+extension WinnersViewController: AllWinnersPresenterProtocol{
     
     
     func all(wolrdCups: [WolrdCupEntity]) {
