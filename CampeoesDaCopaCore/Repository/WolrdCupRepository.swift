@@ -18,7 +18,12 @@ class WolrdCupRepository: WolrdCupRepositoryProtocol{
     private init() {
         do {
             jsonData = try Data(contentsOf: Constants.Repository.url)
-            wolrdCup  = try! jsonDecoder.decode([WolrdCupEntity].self , from: jsonData!)
+            do{
+                    wolrdCup  = try jsonDecoder.decode([WolrdCupEntity].self , from: jsonData!)
+            }catch{
+                    print("Erro ao acessar entidade: \(error.localizedDescription)")
+            }
+            
         }catch {
             print("Erro ao acessar URL: \(error.localizedDescription)")
         }

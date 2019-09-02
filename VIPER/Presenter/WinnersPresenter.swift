@@ -15,7 +15,11 @@ class WinnersPresenter: ShowWinnersPresenterProtocol{
     
     func show(wolrdCup: WolrdCupEntity, winnersViewController: WinnersViewController) {
         winnersRouter = WinnersRouter()
-        winnersRouter?.show(wolrdCup: wolrdCup, viewController: winnersViewController)
+        
+        if let winnersRouter = winnersRouter{
+                winnersRouter.show(wolrdCup: wolrdCup, viewController: winnersViewController)
+        }
+        
     }
     
 }

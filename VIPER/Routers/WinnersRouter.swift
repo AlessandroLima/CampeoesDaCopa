@@ -46,7 +46,10 @@ class WinnersRouter: UINavigationController, WinnersRouterRouterProtocol {
             
             wolrdCupViewController.navigationItem.title = "Copa do mundo \(wolrdCup.year)"
             wolrdCupViewController.wolrdCupEntity = wolrdCup
-            viewController.navigationController?.pushViewController(wolrdCupViewController, animated: true)
+            
+            if let navigationController = viewController.navigationController{
+             navigationController.pushViewController(wolrdCupViewController, animated: true)
+            }
         }
         
     }
